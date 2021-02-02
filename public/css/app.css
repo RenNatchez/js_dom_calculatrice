@@ -9928,5 +9928,22 @@ h3 {
     border-color: #dee2e6;
   }
 }
+section .fond {
+  height: 60em;
+  width: 40em;
+  border-radius: 10%;
+}
+section .centrer {
+  margin: 0 auto;
+}
+section .btn-fonction {
+  height: 3em;
+  width: 3em;
+  font-size: 35px;
+  color: #ffffff;
+}
+section .btn-large {
+  width: 100%;
+}
 
 /*# sourceMappingURL=app.css.map */
