@@ -13,89 +13,107 @@
     <section>
         <div class="bg-light fond centrer px-5">
             <!-- imput -->
-            <div class="input-group input-group-lg pt-5">
-                <input type="text" class="form-control py-5 " aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-lg">
-            </div>
-            <!-- boutons -->
-            <!-- colonne 1 -->
-            <div class="container pt-5">
-                <div class="row ">
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info  btn-fonction" value="9">9</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info btn-fonction" value="8">8</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info btn-fonction" value="7">7</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-warning btn-fonction" value="+">+</button>
-                    </div>
-                </div>
-            </div>
-            <!-- colonne 2 -->
-            <div class="container pt-5">
-                <div class="row ">
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info  btn-fonction" value="6">6</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info btn-fonction" value="5">5</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info btn-fonction" value="4">4</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-warning btn-fonction" value="-">-</button>
-                    </div>
-                </div>
-            </div>
-            <!-- colonne 3 -->
-            <div class="container pt-5">
-                <div class="row ">
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info  btn-fonction" value="3">3</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info btn-fonction" value="2">2</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info btn-fonction" value="1">1</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-warning btn-fonction" value="*">*</button>
-                    </div>
-                </div>
-            </div>
-            <!-- colonne 4 -->
-            <div class="container pt-5">
-                <div class="row ">
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info  btn-fonction" value="C">C</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info btn-fonction" value="0">0</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-info btn-fonction" value=".">.</button>
-                    </div>
-                    <div class="col-3 text-center">
-                        <button type="button" class=" btn btn-warning btn-fonction" value="/">/</button>
-                    </div>
-                </div>
-            </div>
-            <!-- colonne 4 -->
             <div class="container pt-5">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <button type="button" class=" btn btn-danger btn-fonction btn-large" value="=">=</button>
+                    <div class="col-12 text-center btn-fonction shadow-lg p-4 bg-white rounded">
+                        <p class="number text-right text-dark"></p>
                     </div>
-            </div>
+                    <!-- boutons -->
+                    <!-- colonne 1 -->
+                    <div class="container pt-5">
+                        <div class="row ">
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info  btn-fonction"
+                                    value="9">9</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info btn-fonction"
+                                    value="8">8</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info btn-fonction"
+                                    value="7">7</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="choix(this)" class=" btn btn-warning btn-fonction"
+                                    value="+">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- colonne 2 -->
+                    <div class="container pt-5">
+                        <div class="row ">
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info  btn-fonction"
+                                    value="6">6</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info btn-fonction"
+                                    value="5">5</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info btn-fonction"
+                                    value="4">4</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="choix(this)" class=" btn btn-warning btn-fonction"
+                                    value="-">-</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- colonne 3 -->
+                    <div class="container pt-5">
+                        <div class="row ">
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info  btn-fonction"
+                                    value="3">3</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info btn-fonction"
+                                    value="2">2</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info btn-fonction"
+                                    value="1">1</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="choix(this)" class=" btn btn-warning btn-fonction"
+                                    value="*">*</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- colonne 4 -->
+                    <div class="container pt-5">
+                        <div class="row ">
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="choix(this)" class=" btn btn-info  btn-fonction"
+                                    value="C">C</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="valeur(this)" class=" btn btn-info btn-fonction"
+                                    value="0">0</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button"  class=" btn btn-info btn-fonction"
+                                    value=.>.</button>
+                            </div>
+                            <div class="col-3 text-center">
+                                <button type="button" onclick="choix(this)" class=" btn btn-warning btn-fonction"
+                                    value="/">/</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- colonne 4 -->
+                    <div class="container pt-5">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <button type="button" onclick="choix(this)"
+                                    class=" btn btn-danger btn-fonction btn-large" value="=">=</button>
+                            </div>
+                        </div>
 
     </section>
-        <script src="./public/js/main.js"></script>
+    <script src="./public/js/main.js"></script>
 </body>
 
 </html>
